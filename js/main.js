@@ -1,9 +1,11 @@
 jQuery(document).ready(function($){
 
 	var productViewer = function(element) {
+		console.log(element);
 		this.element = element;
 		this.handleContainer = this.element.find('.cd-product-viewer-handle');
 		this.handleFill = this.handleContainer.children('.fill');
+		console.log(this.handleFill);
 		this.handle = this.handleContainer.children('.handle');
 		this.imageWrapper = this.element.find('.product-viewer');
 		this.slideShow = this.imageWrapper.children('.product-sprite');

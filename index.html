@@ -3,7 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<script
+  src="https://code.jquery.com/jquery-1.11.3.min.js"
+  integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
+  crossorigin="anonymous"></script>
+  <script>
+   var $x = jQuery.noConflict();
+   //alert("Version: "+$x.fn.jquery);
+</script>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -16,11 +23,12 @@
 <header class="cd-intro">
 	<h1>360 Degrees Product Viewer</h1>
 </header>
-<div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
+<!--<div class="testContainer">-->
+<div class="cd-product-viewer-wrapper" data-frame="30" data-friction="0.33">
 	<div>
 		<figure class="product-viewer">
 			<img src="img/img-loading.jpg" alt="Product Preview">
-			<div class="product-sprite" data-image="img/img-sprite.png"></div>
+			<div class="product-sprite" data-image="img/Pouch_360_Resize.jpg"></div>
 		</figure> <!-- .product-viewer -->
 
 		<div class="cd-product-viewer-handle">
@@ -29,7 +37,10 @@
 		</div>
 	</div> <!-- .cd-product-viewer-handle -->
 </div> <!-- .cd-product-viewer-wrapper -->
-	
+<!--</div>-->
+	<div>
+		<p>some content</p>
+	</div>
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
